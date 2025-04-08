@@ -11,7 +11,13 @@ import Try from '../Components/Try'
 const Home = () => {
   return (
     <div>
-      
+      <Hero/>
+      <Features/>
+        <Content/>
+        <Gallery/>
+        <Partners/>
+        <Testimonials/>
+        <Try/>
     </div>
   )
 }

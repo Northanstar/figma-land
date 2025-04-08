@@ -5,6 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { AnimatePresence, motion } from "framer-motion";
 import { navlinks } from '../Constant/Index';
 import { itemVariants, sideVariants } from "../Utils/Motion";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -24,7 +25,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between lg:w-[30%] md:w-[40%]">
         {navlinks.map((link) => (
             <div className="" key={link.name}>
-                <a href="#" className='list-none'>{link.title}</a>
+             <Link to ={link.url} className="list-none">{link.title}</Link>
             </div>
         ))}
         </div>
